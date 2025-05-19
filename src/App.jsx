@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const isOwnerPath = useLocation().pathname.includes("owner");
 
   return (
-    <>
-    </>
+    <div>
+      {!isOwnerPath && <Navbar/>}
+    </div>
   )
 }
 
