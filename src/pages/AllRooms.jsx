@@ -121,7 +121,7 @@ const AllRooms = () => {
             openFilters && "border-b"
           }`}
         >
-          <p text-base font-medium text-gray-800>
+          <p className="text-base font-medium text-gray-800">
             FILTERS
           </p>
           <div className="text-xs cursor-pointer">
